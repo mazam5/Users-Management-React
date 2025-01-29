@@ -3,10 +3,13 @@ import UserContext from "../context";
 import UserCard from "./UserCard";
 
 const UsersList = () => {
-  const { allUsers } = useContext(UserContext);
+  const { currentUsers } = useContext(UserContext);
   return (
-    <section className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
-      {allUsers.map((user, index) => {
+    <section
+      className="grid md:grid-cols-2 grid-cols-1 rounded-xl md:gap-3 gap-1"
+      style={{ height: "80vh", overflowY: "auto" }}
+    >
+      {currentUsers.map((user, index) => {
         return (
           <div key={index}>
             <UserCard data={user} />

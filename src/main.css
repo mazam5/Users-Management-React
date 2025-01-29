@@ -35,7 +35,7 @@ ul {
   --clr-success: #087b2f;
   --clr-danger: #a80000;
   --clr-disabled: #cccccc;
-  --clr-background: #ffffff;
+  --clr-background: #f0f0f0;
   --clr-divider: #c4c4c4;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -48,6 +48,7 @@ ul {
 body {
   font: var(--font-weight-semi-bold) 1.25rem / 1 var(--font-primary);
   color: var(--clr-text-primary);
+  background-color: var(--clr-background);
 }
 
 button {
