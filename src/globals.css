@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  padding: 0;
+  margin: 0;
+}
+*/
+@layer theme {
+  :root {
+    --clr-text-primary: #000000;
+    --clr-text-secondary: #979797;
+    --clr-active-link: #1d4ed8;
+    --clr-header: #d0f7fa;
+    --clr-active-tab: #00635b;
+    --clr-active-option: #9c4de2;
+    --clr-success: #087b2f;
+    --clr-danger: #a80000;
+    --clr-disabled: #cccccc;
+    --clr-background: #fefefe;
+    --background: #f0f0f0;
+    --clr-divider: #c4c4c4;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-primary: "Poppins", sans-serif;
+    --sidebar-width: 5.75rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    font-family: var(--font-display);
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    scrollbar-width: thin;
+  }
+  button {
+    cursor: pointer;
+    background-color: purple;
+    border-radius: 0.25rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    font: var(--font-weight-semi-bold) 1.25rem / 1 var(--font-primary);
+    color: var(--clr-text-primary);
+    background-color: var(--color-gray-300);
+  }
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+}
