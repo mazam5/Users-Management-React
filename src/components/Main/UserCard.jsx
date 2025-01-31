@@ -18,10 +18,10 @@ const UserCard = (props) => {
     <div className="m-1 rounded-2xl bg-white p-3 hover:border-gray-400 hover:bg-gray-200">
       <div className="flex items-center justify-between rounded-xl">
         <div className="flex items-center">
-          <SquareUser size="5rem" className="md:mx-4" />
+          <SquareUser size="4rem" className="md:mx-4" />
           <div>
             <h2 className="text-xl font-bold md:text-2xl">{props.data.name}</h2>
-            <p className="flex items-center text-lg italic">
+            <p className="flex items-center text-xs italic md:text-lg">
               <AtSign size="2rem" className="mr-2" />
               {props.data.username}
             </p>
@@ -30,11 +30,11 @@ const UserCard = (props) => {
               className="flex items-center hover:text-blue-500 hover:underline"
             >
               <Send size="2rem" className="mr-2" />
-              <p className="text-lg italic">{props.data.email}</p>
+              <p className="text-xs italic md:text-lg">{props.data.email}</p>
             </a>
           </div>
+          <h2 className="text-xl font-bold md:text-3xl">#{props.data.id}</h2>
         </div>
-        <h2 className="text-2xl font-bold md:text-4xl">#{props.data.id}</h2>
       </div>
       <div className="my-2 flex items-center justify-between"></div>
       <div className="mb-4 flex items-center rounded-xl bg-gray-400 p-1">

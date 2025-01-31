@@ -4,7 +4,6 @@ import Navbar from "./components/Main/Navbar";
 import UsersList from "./components/Main/UsersList";
 import Modal from "./components/Modals/Modal";
 import ModalDelete from "./components/Modals/ModalDelete";
-import Pagination from "./components/Pagination/Pagination";
 import UserContext from "./context/UserContext";
 import useUsers from "./hooks/useUsers";
 
@@ -60,13 +59,7 @@ function App() {
             <p>Loading...</p>
           </div>
         ) : (
-          <>
-            <UsersList />
-            <Pagination
-              totalUsers={allUsers.length}
-              usersPerPage={usersPerPage}
-            />
-          </>
+          <UsersList />
         )}
       </div>
       {deleteModal.status && <ModalDelete />}
