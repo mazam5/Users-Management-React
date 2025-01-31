@@ -36,6 +36,7 @@ function App() {
         allUsers,
         setAllUsers,
         formData,
+        usersPerPage,
         setUsersPerPage,
         currentPage,
         currentUsers,

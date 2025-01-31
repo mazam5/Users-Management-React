@@ -33,8 +33,8 @@ const UserCard = (props) => {
               <p className="text-xs italic md:text-lg">{props.data.email}</p>
             </a>
           </div>
-          <h2 className="text-xl font-bold md:text-3xl">#{props.data.id}</h2>
         </div>
+        <h2 className="text-xl font-bold md:text-3xl">#{props.data.id}</h2>
       </div>
       <div className="my-2 flex items-center justify-between"></div>
       <div className="mb-4 flex items-center rounded-xl bg-gray-400 p-1">
@@ -52,7 +52,6 @@ const UserCard = (props) => {
           onClick={() => {
             setEditModal({ status: true, id: props.data.id });
             setEdit(props.data.id);
-            console.log(props.data.id);
           }}
           className="flex items-center justify-between rounded-md bg-indigo-500 p-2 text-white hover:bg-indigo-700"
         >
