@@ -29,7 +29,7 @@ const Pagination = ({ totalUsers, usersPerPage }) => {
         <ChevronLeft />
       </PaginationButton>
 
-      <div className="mx-8 flex gap-3">
+      <div className="mx-2 flex gap-3 md:mx-8">
         {pages.map((page) => (
           <PaginationButton
             key={page}
